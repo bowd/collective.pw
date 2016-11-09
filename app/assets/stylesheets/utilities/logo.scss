@@ -1,0 +1,16 @@
+.logo.jumbo {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  .co {
+    display: inline-block;
+    border: 4px solid #333;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    padding: 0px 3px;
+    i {
+      font-size: 70%;
+    }
+    margin-right: 2px;
+  }
+}
