@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  edit_token: MyString
+  political_answers: 
+  political_coordinates_x: 1
+  political_coordinates_y: 1
+  personal_answers: 
+  username: MyString
+
+two:
+  email: MyString
+  edit_token: MyString
+  political_answers: 
+  political_coordinates_x: 1
+  political_coordinates_y: 1
+  personal_answers: 
+  username: MyString

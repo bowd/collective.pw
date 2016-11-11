@@ -1,0 +1,103 @@
+.NewStory.Step-PoliticalViews {
+  .row {
+    margin-top: 20px;
+  }
+
+  .political-map {
+    margin: auto;
+    width: 250px;
+    height: 243px;
+    background-image: asset-url('political-map.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+
+    .person {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      font-size: 19px;
+      color: #333;
+      i {
+        position: relative;
+        top: -16px;
+        left: -7px;
+      }
+    }
+
+    .map-label {
+      font-size: 12px;
+      position: absolute;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      display: block;
+      padding: 3px 5px;
+      border-radius: 10px;
+      text-transform: capitalize;
+      min-width: 40px;
+      text-align: center;
+      &.bottom {
+        bottom: 0px;
+        left: 90px;
+      }
+      &.top {
+        top: 0x;
+        left: 100px;
+      }
+      &.left {
+        left: 0px;
+        top: 110px;
+      }
+      &.right {
+        right: 0px;
+        top: 110px;
+      }
+    }
+
+  }
+
+  label {
+    font-weight: 600;
+    .label-sub {
+      font-weight: 100;
+      display: block;
+      font-size: 14px;
+      b.private-link {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .breadcrumb {
+    .breadcrumb-item {
+      font-size: 14px;
+    }
+  }
+
+  .Questions {
+    .Question-text {
+      position: relative;
+      padding-left: 32px;
+      .q-tip {
+        display: inline-block;
+        padding: 2px 5px;
+        line-height: 16px;
+        font-size: 14px;
+        border-radius: 3px;
+
+        background: #333;
+        color: white;
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        min-width: 25px;
+        text-align: center;
+      }
+    }
+    .Question-answer {
+      margin-bottom: 15px;
+    }
+
+  }
+}
+

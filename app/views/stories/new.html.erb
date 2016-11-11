@@ -1,0 +1,21 @@
+<div class="container NewStory Step-Email">
+  <%= render partial: 'shared/logo' %>
+
+  <%= form_for @story do |f| %>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <label>
+        Your email
+        <span class="label-sub"> We'll send you a unique link to your story so you can come back and edit it. <br />
+          No login needed. <br/>
+          You'll also receive links to other people's stories.
+      </label>
+      <%= f.email_field :email, placeholder: "you@clinton-private-server.gov" %>
+
+      <button class="btn btn-primary pull-right">
+        Continue
+      </button>
+    </div>
+  </div>
+  <% end %>
+</div>

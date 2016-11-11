@@ -1,0 +1,19 @@
+<div class="container NewStory Step-Email">
+  <%= render partial: 'shared/logo', locals: {link: true} %>
+
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      There's already a story associated with <b><%= @email %></b>. </br>
+      If that's you, please check your email for the unique url or use the form bellow to resend it.
+
+      <div style="margin: 20px 0px;">
+      [ reCAPTCHA HERE + FUTURE THROTTLING ]
+      </div>
+
+      <button class="btn btn-primary">
+        Resend link to <%= @email %>
+      </button>
+    </div>
+  </div>
+</div>
+

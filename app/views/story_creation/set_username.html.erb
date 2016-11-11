@@ -1,0 +1,26 @@
+<div class="container NewStory Step-Username" data-backbone-view="Story.Username">
+  <%= render partial: 'shared/logo' %>
+
+  <%= form_for @story, url: update_story_path(token: @story.token) do |f| %>
+  <%= f.hidden_field :token %>
+  <input type="hidden" name="step" value="set_username" />
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <label>
+        Username
+        <span class="label-sub"> 
+          Your annonymous story will be accessible at: 
+          <b class="private-link">collective.pw/@username</b> <br/>
+          We'll share it with people that might benefite from it. <br />
+        </span>
+      </label>
+
+      <%= f.text_field :username, placeholder: 'best_potus_evah' %>
+
+      <button class="btn btn-primary pull-right">
+        Continue
+      </button>
+    </div>
+  </div>
+  <% end %>
+</div>

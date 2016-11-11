@@ -1,0 +1,34 @@
+.NewStory.Step-Username {
+  .row {
+    margin-top: 20px;
+  }
+  label {
+    font-weight: 600;
+    .label-sub {
+      font-weight: 100;
+      display: block;
+      font-size: 14px;
+      b.private-link {
+        font-size: 18px;
+      }
+    }
+  }
+
+  input {
+    font-size: 30px;
+    font-weight: 300;
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+

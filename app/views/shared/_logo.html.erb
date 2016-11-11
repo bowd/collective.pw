@@ -1,0 +1,16 @@
+<% size ||= :regular %>
+<% link ||= false %>
+
+<% if link %> 
+  <a href="/"> 
+<% end %>
+<% if size == :big %>
+  <h1 class="display-4 logo"><span class="co">c<i class="fa fa-globe"></i></span>llective</h1>
+<% elsif size == :regular %>
+  <h1 class="display-8 logo"><span class="co">c<i class="fa fa-globe"></i></span>llective</h1>
+<% elsif size == :small %>
+  <h1 class="display-8 logo"><span class="co">c<i class="fa fa-globe"></i></span>llective</h1>
+<% end %>
+<% if link %>
+  </a> 
+<% end %>

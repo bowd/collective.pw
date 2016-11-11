@@ -13,5 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require underscore/underscore
+//= require backbone/backbone
+//= require react
+//= require react-dom
+//
+// Application code:
+//= require lib/view_manager
+//= require init
+//
+//= require lib/ns
+//= require_tree ./views
+//= require_tree ./components
+//
 //= require turbolinks
-//= require_tree .

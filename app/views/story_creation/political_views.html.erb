@@ -1,0 +1,44 @@
+<div class="container NewStory Step-PoliticalViews" data-backbone-view="Story.PoliticalViews">
+  <%= render partial: 'shared/logo' %>
+
+  <%= form_for @story, url: update_story_path(token: @story.token) do |f| %>
+  <%= f.hidden_field :token %>
+  <input type="hidden" name="step" value="political_views" />
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="political-map">
+        <span class="map-label left">left</span>
+        <span class="map-label right">right</span>
+        <span class="map-label bottom">libertarian</span>
+        <span class="map-label top">statism</span>
+        <span class="person">
+          <i class="fa fa-user"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <label>
+        Political stance
+        <span class="label-sub"> 
+          Please answer a few questions about your political stance in order to find suitable people with opposite views.
+        </span>
+      </label>
+
+      <%= f.hidden_field :political_answers %>
+
+      <hr class="my-2">
+
+      <script type="application/json" id="questions-json">
+        <%= questions.to_json.html_safe %>
+      </script>
+
+      <div id="questions-root"></div>
+
+      <button style="display: none" class="btn btn-primary pull-right">
+        Continue
+      </button>
+    </div>
+  </div>
+  <% end %>
+</div>
